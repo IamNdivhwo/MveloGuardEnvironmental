@@ -1,0 +1,144 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.team-member, .project {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.team-member img, .project img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 25%;
+}
+
+.team-member h3, .project h3 {
+    margin: 10px 0;
+}
+#our-clients {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#our-clients h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.client {
+    flex: 1 1 calc(25% - 20px); /* Adjust to fit your needs, e.g., 50% for 2 per row */
+    max-width: 200px;
+    margin: 10px;
+}
+
+.client img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.client img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .client {
+        flex: 1 1 calc(50% - 20px); /* Adjust to 2 per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .client {
+        flex: 1 1 100%; /* Full width on very small screens */
+    }
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+#social-media {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-top: 30px;
+}
+
+#social-media h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
